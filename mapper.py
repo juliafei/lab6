@@ -3,7 +3,7 @@ import sys, time
 
 def parseRecords():
     for row in sys.stdin:
-        row = line.strip('\n')
+        row = line.strip(',')
         yield row.split()
 
 def mapper():
@@ -11,7 +11,6 @@ def mapper():
         for r in row:
             if row[14]!= 'F':
             (cuisine) = (row[7])
-            count = count + 1
             yield (cuisine)
             
 
