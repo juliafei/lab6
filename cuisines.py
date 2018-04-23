@@ -5,7 +5,7 @@ def main(sc):
     
     FOOD = '/data/share/bdm/nyc_restaurants.csv'
     food = sc.textFile(FOOD, use_unicode=False).cache()
-    filename = '/home/cusp/jl7156/lab6/lab6/res.txt'
+    filename = 'res.txt'
     #list(enumerate(food.first().split(',')))
 
     def getCuisine(partId, list_of_rest):
